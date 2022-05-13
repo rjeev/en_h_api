@@ -25,6 +25,6 @@ app.use('/', authJwt.verifyToken);
 app.use('/user', require('./user'))
 
 // Using AI Platform
-app.use('/ai', require('./ai'))
+app.use('/openai', require('./openai'))
 
 module.exports = app
